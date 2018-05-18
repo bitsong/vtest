@@ -1,0 +1,36 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "browse": {
+                "path": [
+                    "${workspaceFolder}"
+                ],
+                "limitSymbolsToIncludedHeaders": true
+            },
+            "includePath":[
+                "${workspaceFolder}",
+                "E:/Program Files (x86)/Microsoft Visual Studio/2017/Community/VC/Tools/MSVC/14.13.26128/include/*",
+                "E:/Program Files (x86)/Microsoft Visual Studio/2017/Community/VC/Tools/MSVC/14.13.26128/atlmfc/include/*",
+                "C:/Program Files (x86)/Windows Kits/10/Include/10.0.16299.0/um",
+                "C:/Program Files (x86)/Windows Kits/10/Include/10.0.16299.0/ucrt",
+                "C:/Program Files (x86)/Windows Kits/10/Include/10.0.16299.0/shared",
+                "C:/Program Files (x86)/Windows Kits/10/Include/10.0.16299.0/winrt",
+                "C:/ti/mcsdk_1_01_00_02/board-support/linux-3.3-psp03.22.00.06.sdk/include",
+                "C:/ti/mcsdk_1_01_00_02/board-support/linux-3.3-psp03.22.00.06.sdk/arch/arm/include",
+                "C:/ti/mcsdk_1_01_00_02/board-support/linux-3.3-psp03.22.00.06.sdk/arch/sh/include",
+                "C:/ti/mcsdk_1_01_00_02/board-support/linux-3.3-psp03.22.00.06.sdk/arch/arm/mach-davinci/include"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE",
+                "__KERNEL__"
+            ],
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "msvc-x64"
+        }
+    ],
+    "version": 4
+}

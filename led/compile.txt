@@ -1,0 +1,16 @@
+U-boot:
+host $ make distclean CROSS_COMPILE=arm-arago-linux-gnueabi
+host $ make omapl138_lcdk_config CROSS_COMPILE=arm-arago-linux-gnueabi
+host $ make all CROSS_COMPILE=arm-arago-linux-gnueabi-
+
+
+
+
+kernel:
+export PATH=/home/qwc/arm/arago-2011.09/armv5te/bin:$PATH
+host$ export PATH=/opt/ti/mcsdk_1_01_00_01/board-support/u-boot--psp\tools:$PATH
+
+host $ ARCH=arm CROSS_COMPILE=arm-arago-linux-gnueabi- make distclean 
+host $ ARCH=arm CROSS_COMPILE=arm-arago-linux-gnueabi- make da850_lcdk_defconfig
+host $ ARCH=arm CROSS_COMPILE=arm-arago-linux-gnueabi- make menuconfig
+host $ ARCH=arm CROSS_COMPILE=arm-arago-linux-gnueabi- make uImage -j 2
